@@ -1403,3 +1403,115 @@ select:focus-visible {
     margin-top: 3px;
 }
 
+/* =========================================================
+   ENGLISH VERSION - LTR
+   Applies only to pages with <html dir="ltr">
+   ========================================================= */
+
+html[dir="ltr"] body {
+    direction: ltr;
+}
+
+/* ----- HEADER ----- */
+
+html[dir="ltr"] .site-header {
+    direction: ltr;
+}
+
+html[dir="ltr"] .company-name {
+    direction: ltr;
+    text-align: left;
+    align-items: flex-start;
+}
+
+/* Keep English navigation on one line */
+html[dir="ltr"] .main-nav {
+    direction: ltr;
+    flex-wrap: nowrap;
+    gap: 12px;
+}
+
+html[dir="ltr"] .main-nav a {
+    font-size: 15px;
+    white-space: nowrap;
+}
+
+html[dir="ltr"] .language {
+    direction: ltr;
+    white-space: nowrap;
+}
+
+/* ----- HOME HERO ----- */
+
+html[dir="ltr"] .hero {
+    direction: ltr;
+}
+
+html[dir="ltr"] .hero-content {
+    direction: ltr;
+    text-align: left;
+}
+
+html[dir="ltr"] .hero h1,
+html[dir="ltr"] .hero p {
+    text-align: left;
+}
+
+/* ----- HOME PAGE TEXT ----- */
+
+html[dir="ltr"] .values,
+html[dir="ltr"] .partners {
+    direction: ltr;
+}
+
+html[dir="ltr"] .expertise {
+    direction: ltr;
+    text-align: center;
+}
+
+html[dir="ltr"] .cards {
+    direction: ltr;
+}
+
+
+/* ----- EXPERTISE CARDS ----- */
+
+html[dir="ltr"] .card,
+html[dir="ltr"] .card-content {
+    direction: ltr;
+    text-align: left;
+}
+
+html[dir="ltr"] .card h3,
+html[dir="ltr"] .card p,
+html[dir="ltr"] .card span {
+    text-align: left;
+}
+
+/* ----- PROCESS ----- */
+
+html[dir="ltr"] .process {
+    direction: ltr;
+}
+
+html[dir="ltr"] .process-row {
+    direction: ltr;
+}
+
+/* ----- CONTACT STRIP ----- */
+
+html[dir="ltr"] .contact-strip {
+    direction: ltr;
+}
+
+/* ----- FOOTER ----- */
+
+html[dir="ltr"] footer {
+    direction: ltr;
+}
+
+html[dir="ltr"] .clean-topic {
+    padding-left: 22px;
+    padding-right: 22px;
+    box-sizing: border-box;
+}
