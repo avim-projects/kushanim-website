@@ -1515,3 +1515,40 @@ html[dir="ltr"] .clean-topic {
     padding-right: 22px;
     box-sizing: border-box;
 }
+
+/* ========================================
+   SMART CONTACT FORM + WHATSAPP QR
+   ======================================== */
+.contact-form-box select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cfd8df;
+    background: #fff;
+    font-family: inherit;
+    font-size: 16px;
+}
+.smart-form-intro { margin: -4px 0 14px; color: #657585; }
+.smart-extra-fields { display: grid; gap: 10px; }
+.smart-extra-fields[hidden] { display: none; }
+.whatsapp-contact { text-align: center; }
+.whatsapp-contact h2 { margin-bottom: 22px; }
+.whatsapp-qr-link { display: inline-block; }
+.whatsapp-qr {
+    display: block;
+    width: min(250px, 78vw);
+    height: auto;
+    margin: 0 auto 18px;
+    padding: 12px;
+    background: #fff;
+    border: 1px solid #d9e0e6;
+}
+.whatsapp-contact p { margin: 8px auto; color: #5b6977; }
+
+html[dir="ltr"] .contact-page,
+html[dir="ltr"] .contact-layout,
+html[dir="ltr"] .contact-info,
+html[dir="ltr"] .contact-form-box {
+    direction: ltr;
+    text-align: left;
+}
+html[dir="ltr"] .whatsapp-contact { text-align: center; }

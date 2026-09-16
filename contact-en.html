@@ -1,9 +1,70 @@
-<!DOCTYPE html><html lang="en" dir="ltr"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Contact | Kushanim Real Estate & Ventures Ltd.</title><link rel="stylesheet" href="css/style.css"></head><body>
-<a class="skip-link" href="#main-content">Skip to main content</a>
-<header class="site-header"><div class="company-name"><span class="company-main-name">Kushanim</span><span class="company-sub-name">Real Estate & Ventures Ltd.</span></div>
-<nav class="main-nav"><a href="index-en.html">Home</a><a href="about-en.html">About</a><a href="expertise-1-en.html">Real Estate & Land</a><a href="expertise-2-en.html">Land in Judea & Samaria</a><a href="expertise-3-en.html">Construction</a><a href="expertise-4-en.html">Quarries in Judea & Samaria</a><a href="expertise-5-en.html">Solar Energy</a><a href="information-en.html">Information & Links</a><a href="contact-en.html" class=active>Contact</a></nav><div class="language"><a href="contact.html">עברית</a> | EN</div></header><main id="main-content" tabindex="-1">
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Contact | Kushanim Real Estate & Ventures Ltd.</title><link rel="stylesheet" href="css/style.css"></head>
+<body><a class="skip-link" href="#main-content">Skip to main content</a>
+<header class="site-header"><div class="company-name"><span class="company-main-name">Kushanim</span><span class="company-sub-name">Real Estate & Ventures Ltd.</span></div><nav class="main-nav"><a href="index-en.html">Home</a><a href="about-en.html">About</a><a href="expertise-1-en.html">Real Estate & Land</a><a href="expertise-2-en.html">Land in Judea & Samaria</a><a href="expertise-3-en.html">Construction</a><a href="expertise-4-en.html">Quarries in Judea & Samaria</a><a href="expertise-5-en.html">Solar Energy</a><a href="information-en.html">Information & Links</a><a href="contact-en.html" class="active">Contact</a></nav><div class="language"><a href="contact.html">עברית</a> | EN</div></header>
+<main id="main-content" tabindex="-1"><section class="contact-page"><div class="contact-page-header"><h1>Contact</h1><p>Tell us briefly what your inquiry is about. The form will adapt the questions to the selected topic and send the details directly to us.</p></div>
+<div class="contact-layout">
+<div class="contact-info whatsapp-contact">
+            <h2>Contact Us on WhatsApp</h2>
+            <a class="whatsapp-qr-link" href="https://wa.me/972509594641" target="_blank" rel="noopener"
+               aria-label="Open a WhatsApp conversation">
+                <img class="whatsapp-qr" src="whatsapp-qr.svg" alt="QR code to open a WhatsApp conversation">
+            </a>
+            <p>Scan the QR code to start a WhatsApp conversation</p>
+        </div>
+<div class="contact-form-box smart-contact-form">
+            <h2>How Can We Help?</h2>
+            <p class="smart-form-intro">Choose the subject of your inquiry and complete the relevant details.</p>
+            <form action="https://formsubmit.co/kushanim.office@gmail.com" method="POST">
+                <input type="hidden" name="_subject" value="New inquiry from Kushanim website">
+                <input type="hidden" name="_captcha" value="false">
 
-<section class="contact-page"><div class="contact-page-header"><h1>Contact</h1><p>We would be pleased to receive details and review an inquiry, land, a project or a potential collaboration.</p></div>
-<div class="contact-layout"><div class="contact-info"><h2>Contact Details</h2>
-<div class="contact-info-item"><strong>Email</strong><span>info@company.co.il</span></div><div class="contact-info-item"><strong>Phone</strong><span>00-0000000</span></div><div class="contact-info-item"><strong>Office</strong><span>Company address will appear here</span></div><div class="contact-info-item"><strong>Support</strong><span>support@company.co.il</span></div></div>
-<div class="contact-form-box"><h2>Leave Your Details</h2><form><label for="name">Full Name</label><input type="text" id="name" name="name"><label for="phone">Phone</label><input type="tel" id="phone" name="phone"><label for="email">Email</label><input type="email" id="email" name="email"><label for="message">Message</label><textarea id="message" name="message" rows="5"></textarea><button type="button">Send</button></form><p class="form-note">The contact form will be connected to email when the website is published.</p></div></div></section></main><footer><div>Kushanim Real Estate & Ventures Ltd.</div><div>About &nbsp; | &nbsp; Information & Links &nbsp; | &nbsp; Contact</div></footer></body></html>
+                <label for="subject">Inquiry Subject *</label>
+                <select id="subject" name="Inquiry Subject" required>
+                    <option value="">Choose a subject</option>
+                    <option>Real Estate &amp; Land</option>
+                    <option>Land in Judea &amp; Samaria</option>
+                    <option>Construction</option>
+                    <option>Quarries in Judea &amp; Samaria</option>
+                    <option>Solar Energy</option>
+                    <option>Collaboration</option>
+                    <option>Other</option>
+                </select>
+
+                <div id="smart-extra-fields" class="smart-extra-fields" hidden>
+                    <label for="location">Location / Area</label>
+                    <input type="text" id="location" name="Location / Area">
+
+                    <label for="size">Land / Project Size</label>
+                    <input type="text" id="size" name="Land / Project Size">
+                </div>
+
+                <label for="name">Full Name *</label>
+                <input type="text" id="name" name="Full Name" required>
+
+                <label for="phone">Phone *</label>
+                <input type="tel" id="phone" name="Phone" required>
+
+                <label for="email">Email (optional)</label>
+                <input type="email" id="email" name="Email">
+
+                <label for="message">Additional Details</label>
+                <textarea id="message" name="Additional Details" rows="5"></textarea>
+
+                <button type="submit">Send Inquiry</button>
+            </form>
+        </div>
+</div>
+</section></main>
+<footer><div>Kushanim Real Estate & Ventures Ltd.</div><div>About &nbsp; | &nbsp; Information & Links &nbsp; | &nbsp; Contact</div></footer>
+<script>const topic=document.getElementById('topic');const box=document.getElementById('conditional-fields');const fields={'Land or property':[['Land location','text'],['Approximate size','text'],['Planning status, if known','text']],'Land in Judea & Samaria':[['Location / nearby community','text'],['Approximate size','text'],['Rights / registration information, if known','text']],'Construction':[['Project location','text'],['Project type','text'],['Current stage','text']],'Quarry':[['Location','text'],['Opportunity / material type','text'],['Licensing status, if known','text']],'Solar energy':[['Site location','text'],['Site size (dunams)','number'],['Land / grid connection status, if known','text']],'Collaboration':[['Company / organization name','text'],['Field of activity','text']],'Other':[['Short subject','text']]};function renderFields(){box.innerHTML='';(fields[topic.value]||[]).forEach(([label,type],i)=>{const wrap=document.createElement('div');wrap.className='smart-form-field';const lab=document.createElement('label');const id='extra-'+i;lab.htmlFor=id;lab.textContent=label;const input=document.createElement('input');input.type=type;input.id=id;input.name=label;wrap.append(lab,input);box.appendChild(wrap);});}topic.addEventListener('change',renderFields);</script>
+<script>
+const subject = document.getElementById('subject');
+const extra = document.getElementById('smart-extra-fields');
+subject.addEventListener('change', function () {
+    const detailed = ['Real Estate & Land','Land in Judea & Samaria','Construction','Quarries in Judea & Samaria','Solar Energy'];
+    extra.hidden = !detailed.includes(this.value);
+});
+</script>
+</body></html>

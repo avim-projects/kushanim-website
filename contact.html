@@ -1,136 +1,97 @@
 <!DOCTYPE html>
 <html lang="he" dir="rtl">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>צור קשר | שם החברה</title>
+    <title>צור קשר | קושאנים יזמות ונדל״ן בע״מ</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-	<a class="skip-link" href="#main-content">דלג לתוכן הראשי</a>
-
+<a class="skip-link" href="#main-content">דלג לתוכן הראשי</a>
 <header class="site-header">
-
-	<div class="company-name">
-		<span class="company-main-name">קושאנים</span>
-		<span class="company-sub-name">יזמות ונדל״ן בע״מ</span>
-	</div>
-
-
-    <nav class="main-nav">
-        <a href="index.html">ראשי</a>
-        <a href="about.html">אודות</a>
-        <a href="expertise-1.html">נדל״ן וקרקעות</a>
-        <a href="expertise-2.html">קרקעות ביו״ש</a>
-        <a href="expertise-3.html">בנייה</a>
-        <a href="expertise-4.html">מחצבות ביו״ש</a>
-        <a href="expertise-5.html">אנרגיה סולארית</a>
-        <a href="information.html">מידע ולינקים</a>
-        <a href="contact.html" class="active">צור קשר</a>
-    </nav>
-
-    <div class="language">
-		עברית | <a href="index-en.html">EN</a>
-    </div>
-
+    <div class="company-name"><span class="company-main-name">קושאנים</span><span class="company-sub-name">יזמות ונדל״ן בע״מ</span></div>
+    <nav class="main-nav"><a href="index.html">ראשי</a><a href="about.html">אודות</a><a href="expertise-1.html">נדל״ן וקרקעות</a><a href="expertise-2.html">קרקעות ביו״ש</a><a href="expertise-3.html">בנייה</a><a href="expertise-4.html">מחצבות ביו״ש</a><a href="expertise-5.html">אנרגיה סולארית</a><a href="information.html">מידע ולינקים</a><a href="contact.html" class="active">צור קשר</a></nav>
+    <div class="language">עברית | <a href="contact-en.html">EN</a></div>
 </header>
-
-
 <main id="main-content" tabindex="-1">
-
 <section class="contact-page">
-
-    <div class="contact-page-header">
-
-        <h1>צור קשר</h1>
-
-        <p>
-            נשמח לקבל פרטים ולבחון פנייה, קרקע, פרויקט
-            או אפשרות לשיתוף פעולה.
-        </p>
-
-    </div>
-
-
+    <div class="contact-page-header"><h1>צור קשר</h1><p>ספרו לנו בקצרה במה מדובר. הטופס יתאים את השאלות לנושא הפנייה וישלח את הפרטים ישירות אלינו.</p></div>
     <div class="contact-layout">
-
-        <div class="contact-info">
-
-            <h2>פרטי קשר</h2>
-
-            <div class="contact-info-item">
-                <strong>אימייל</strong>
-                <span>info@company.co.il</span>
-            </div>
-
-            <div class="contact-info-item">
-                <strong>טלפון</strong>
-                <span>00-0000000</span>
-            </div>
-
-            <div class="contact-info-item">
-                <strong>משרד</strong>
-                <span>כתובת החברה תופיע כאן</span>
-            </div>
-
-            <div class="contact-info-item">
-                <strong>תמיכה</strong>
-                <span>support@company.co.il</span>
-            </div>
-
+<div class="contact-info whatsapp-contact">
+            <h2>צרו איתנו קשר ב־WhatsApp</h2>
+            <a class="whatsapp-qr-link" href="https://wa.me/972509594641" target="_blank" rel="noopener"
+               aria-label="פתיחת שיחה ב־WhatsApp">
+                <img class="whatsapp-qr" src="whatsapp-qr.svg" alt="QR לפתיחת שיחה ב־WhatsApp">
+            </a>
+            <p>סרקו את הקוד לפתיחת שיחה ב־WhatsApp</p>
         </div>
+<div class="contact-form-box smart-contact-form">
+            <h2>איך נוכל לעזור?</h2>
+            <p class="smart-form-intro">בחרו את נושא הפנייה ומלאו את הפרטים המתאימים.</p>
+            <form action="https://formsubmit.co/kushanim.office@gmail.com" method="POST">
+                <input type="hidden" name="_subject" value="פנייה חדשה מאתר קושאנים">
+                <input type="hidden" name="_captcha" value="false">
 
+                <label for="subject">נושא הפנייה *</label>
+                <select id="subject" name="נושא הפנייה" required>
+                    <option value="">בחרו נושא</option>
+                    <option>נדל״ן וקרקעות</option>
+                    <option>קרקעות ביו״ש</option>
+                    <option>בנייה</option>
+                    <option>מחצבות ביו״ש</option>
+                    <option>אנרגיה סולארית</option>
+                    <option>שיתוף פעולה</option>
+                    <option>אחר</option>
+                </select>
 
-        <div class="contact-form-box">
+                <div id="smart-extra-fields" class="smart-extra-fields" hidden>
+                    <label for="location">מיקום / אזור</label>
+                    <input type="text" id="location" name="מיקום / אזור">
 
-            <h2>השאירו פרטים</h2>
+                    <label for="size">גודל השטח / הפרויקט</label>
+                    <input type="text" id="size" name="גודל השטח / הפרויקט">
+                </div>
 
-            <form>
+                <label for="name">שם מלא *</label>
+                <input type="text" id="name" name="שם מלא" required>
 
-                <label for="name">שם מלא</label>
-                <input type="text" id="name" name="name">
+                <label for="phone">טלפון *</label>
+                <input type="tel" id="phone" name="טלפון" required>
 
-                <label for="phone">טלפון</label>
-                <input type="tel" id="phone" name="phone">
+                <label for="email">אימייל (לא חובה)</label>
+                <input type="email" id="email" name="אימייל">
 
-                <label for="email">אימייל</label>
-                <input type="email" id="email" name="email">
+                <label for="message">פרטים נוספים</label>
+                <textarea id="message" name="פרטים נוספים" rows="5"></textarea>
 
-                <label for="message">הודעה</label>
-                <textarea id="message" name="message" rows="5"></textarea>
-
-                <button type="button">
-                    שליחה
-                </button>
-
+                <button type="submit">שליחת הפנייה</button>
             </form>
-
-            <p class="form-note">
-                טופס השליחה יחובר לאימייל בשלב הפרסום.
-            </p>
-
         </div>
-
-    </div>
-
+</div>
 </section>
-
 </main>
-
-
-<footer>
-
-	<div>קושאנים יזמות ונדל״ן בע״מ</div>
-
-    <div>
-        אודות &nbsp; | &nbsp;
-        מידע ולינקים &nbsp; | &nbsp;
-        צור קשר
-    </div>
-
-</footer>
-
+<footer><div>קושאנים יזמות ונדל״ן בע״מ</div><div>אודות &nbsp; | &nbsp; מידע ולינקים &nbsp; | &nbsp; צור קשר</div></footer>
+<script>
+const topic=document.getElementById('topic');
+const box=document.getElementById('conditional-fields');
+const fields={
+'קרקע או נכס':[['מיקום הקרקע','text'],['גודל משוער','text'],['מצב תכנוני, אם ידוע','text']],
+'קרקע ביו״ש':[['מיקום / יישוב סמוך','text'],['גודל משוער','text'],['מידע על זכויות / רישום, אם ידוע','text']],
+'בנייה':[['מיקום הפרויקט','text'],['סוג הפרויקט','text'],['שלב נוכחי','text']],
+'מחצבה':[['מיקום','text'],['סוג ההזדמנות / החומר','text'],['סטטוס רישוי, אם ידוע','text']],
+'אנרגיה סולארית':[['מיקום השטח','text'],['גודל השטח בדונם','number'],['סטטוס הקרקע / חיבור, אם ידוע','text']],
+'שיתוף פעולה':[['שם החברה / הגוף','text'],['תחום הפעילות','text']],
+'אחר':[['נושא קצר','text']]};
+function renderFields(){box.innerHTML='';(fields[topic.value]||[]).forEach(([label,type],i)=>{const wrap=document.createElement('div');wrap.className='smart-form-field';const lab=document.createElement('label');const id='extra-'+i;lab.htmlFor=id;lab.textContent=label;const input=document.createElement('input');input.type=type;input.id=id;input.name=label;wrap.append(lab,input);box.appendChild(wrap);});}
+topic.addEventListener('change',renderFields);
+</script>
+<script>
+const subject = document.getElementById('subject');
+const extra = document.getElementById('smart-extra-fields');
+subject.addEventListener('change', function () {
+    const detailed = ['נדל״ן וקרקעות','קרקעות ביו״ש','בנייה','מחצבות ביו״ש','אנרגיה סולארית'];
+    extra.hidden = !detailed.includes(this.value);
+});
+</script>
 </body>
 </html>
