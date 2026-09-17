@@ -1517,7 +1517,7 @@ html[dir="ltr"] .clean-topic {
 }
 
 /* ========================================
-   SMART CONTACT FORM + WHATSAPP QR
+   SMART CONTACT FORM + CONTACT ILLUSTRATION
    ======================================== */
 .contact-form-box select {
     width: 100%;
@@ -1530,19 +1530,22 @@ html[dir="ltr"] .clean-topic {
 .smart-form-intro { margin: -4px 0 14px; color: #657585; }
 .smart-extra-fields { display: grid; gap: 10px; }
 .smart-extra-fields[hidden] { display: none; }
-.whatsapp-contact { text-align: center; }
-.whatsapp-contact h2 { margin-bottom: 22px; }
-.whatsapp-qr-link { display: inline-block; }
-.whatsapp-qr {
-    display: block;
-    width: min(250px, 78vw);
-    height: auto;
-    margin: 0 auto 18px;
-    padding: 12px;
-    background: #fff;
-    border: 1px solid #d9e0e6;
+.contact-illustration {
+    text-align: center;
 }
-.whatsapp-contact p { margin: 8px auto; color: #5b6977; }
+.contact-illustration h2 {
+    margin-bottom: 22px;
+}
+.contact-message-image {
+    display: block;
+    width: min(330px, 100%);
+    height: auto;
+    margin: 0 auto 20px;
+}
+.contact-illustration p {
+    margin: 8px auto;
+    color: #5b6977;
+}
 
 html[dir="ltr"] .contact-page,
 html[dir="ltr"] .contact-layout,
@@ -1551,4 +1554,4 @@ html[dir="ltr"] .contact-form-box {
     direction: ltr;
     text-align: left;
 }
-html[dir="ltr"] .whatsapp-contact { text-align: center; }
+html[dir="ltr"] .contact-illustration { text-align: center; }
